@@ -21,4 +21,11 @@ public class  ParticipanteViewModelToModel {
         return participantesViewModel;
     }
 
+    public static ParticipanteViewModel reverse(ParticipanteModel participanteModel){
+        ParticipanteViewModel participanteViewModel = new ParticipanteViewModel();
+        participanteViewModel.setNombre(participanteModel.getNombre());
+
+        return participanteViewModel;
+    }
+
 }

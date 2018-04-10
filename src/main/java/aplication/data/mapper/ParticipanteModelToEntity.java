@@ -17,4 +17,11 @@ public class ParticipanteModelToEntity {
         }
         return participantesModel;
     }
+
+    public static ParticipanteModel reverse ( ParticitanteEntity particitanteEntity) {
+        ParticipanteModel participanteModel = new ParticipanteModel();
+        participanteModel.setNombre(particitanteEntity.getNombre());
+
+        return participanteModel;
+    }
 }
