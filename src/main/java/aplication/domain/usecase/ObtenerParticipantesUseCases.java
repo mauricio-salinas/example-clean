@@ -13,9 +13,5 @@ public class ObtenerParticipantesUseCases {
     @Autowired
     private Repository repositoryLocal;
 
-    public List<ParticipanteModel> obtenerParticipantes(){
-        return repositoryLocal.obtenerParticipantes();
-    }
-
     public ParticipanteModel obtenerParticipante(String rut) {return repositoryLocal.obtenerParticipante(rut); }
 }

@@ -1,9 +1,7 @@
-package aplication.data.datasource;
+package aplication.data.api;
 
 import aplication.data.entity.ParticitanteEntity;
 
-
-public interface Datasource {
-
+public interface Api {
     ParticitanteEntity obtenerParticipante(String rut);
 }

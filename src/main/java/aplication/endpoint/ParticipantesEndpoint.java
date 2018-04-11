@@ -19,10 +19,6 @@ public class ParticipantesEndpoint {
     @Autowired
     private ObtenerParticipantesUseCases obtenerParticipantesUseCases;
 
-    @RequestMapping(value = "/participantes",method = RequestMethod.GET)
-    public List<ParticipanteViewModel> obtenerParticipantes(){
-        return ParticipanteViewModelToModel.reverse(obtenerParticipantesUseCases.obtenerParticipantes());
-    }
 
 
     @RequestMapping(value = "/participante",method = RequestMethod.GET)

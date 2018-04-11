@@ -6,14 +6,15 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
-@Qualifier("FactoryLocal")
-public class FactoryLocal implements Factory<Datasource> {
+@Qualifier("FactoryApi")
+public class FactoryApi implements Factory<Datasource> {
 
     @Autowired
-    private Datasource localDataSource;
+    @Qualifier("ApiDataSource")
+    private Datasource apiDataSource;
 
     @Override
     public Datasource crearDataSource() {
-        return localDataSource;
+        return apiDataSource;
     }
 }

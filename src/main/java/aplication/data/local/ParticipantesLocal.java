@@ -12,29 +12,6 @@ import java.util.HashMap;
 @Component
 public class ParticipantesLocal implements Local {
 
-    @Override
-    public List<ParticitanteEntity> obtenerPartcipantes() {
-        List participantes = new ArrayList();
-        ParticitanteEntity particitanteEntityUno = new ParticitanteEntity();
-        particitanteEntityUno.setNombre("Mauricio Soto");
-
-        ParticitanteEntity particitanteEntityDos = new ParticitanteEntity();
-        particitanteEntityDos.setNombre("Oscar Schnake");
-
-        ParticitanteEntity particitanteEntityTres = new ParticitanteEntity();
-        particitanteEntityTres.setNombre("Sergio Sanchez");
-
-        ParticitanteEntity particitanteEntityCuatro = new ParticitanteEntity();
-        particitanteEntityCuatro.setNombre("Claudio Meriño");
-
-        participantes.add(particitanteEntityUno);
-        participantes.add(particitanteEntityDos);
-        participantes.add(particitanteEntityTres);
-        participantes.add(particitanteEntityCuatro);
-
-
-        return participantes;
-    }
 
     @Override
     public ParticitanteEntity obtenerParticipante(String rut) {
