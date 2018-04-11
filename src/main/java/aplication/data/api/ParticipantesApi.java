@@ -19,10 +19,6 @@ public class ParticipantesApi implements Api {
         responseApiArray = restTemplate.getForObject(getUrlSearch(rut), ParticitanteEntity[].class);
         return getParticipanteEntity(responseApiArray);
 
-
-       /* ParticitanteEntity participanteUno = new ParticitanteEntity();
-        participanteUno.setNombre("Nombre Completo");
-        return participanteUno; */
     }
 
     private ParticitanteEntity getParticipanteEntity(ParticitanteEntity[] responseApiArray) {
