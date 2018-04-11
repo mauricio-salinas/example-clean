@@ -11,7 +11,7 @@ import java.util.List;
 public class ObtenerParticipantesUseCases {
 
     @Autowired
-    private Repository repositoryLocal;
+    private Repository repositoryApi;
 
-    public ParticipanteModel obtenerParticipante(String rut) {return repositoryLocal.obtenerParticipante(rut); }
+    public ParticipanteModel obtenerParticipante(String rut) {return repositoryApi.obtenerParticipante(rut); }
 }
